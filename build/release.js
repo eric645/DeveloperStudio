@@ -4,15 +4,13 @@ module.exports = function( Release ) {
 
 	var
 		files = [
-			"dist/jquery.js",
-			"dist/jquery.min.js",
-			"dist/jquery.min.map",
-			"dist/jquery.slim.js",
-			"dist/jquery.slim.min.js",
-			"dist/jquery.slim.min.map",
-			"src/core.js"
+			"dist/dev.js",
+			"dist/_Developer.js",
+			"dist/__editor__/index.html",
+			"dist/__editor__/_studio/dash.js",
+			"dist/__editor__/_studio/dev.json",
+			"dist/__editor__/DeveloperStudio.exe
 		],
-		cdn = require( "./release/cdn" ),
 		dist = require( "./release/dist" ),
 		ensureSizzle = require( "./release/ensure-sizzle" ),
 
