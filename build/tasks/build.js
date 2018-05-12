@@ -24,7 +24,7 @@ module.exports = function( grunt ) {
 
 		config = {
 			baseUrl: "src",
-			name: "jquery",
+			name: "Developer Studio",
 
 			// Allow strict mode
 			useStrict: true,
@@ -71,14 +71,6 @@ module.exports = function( grunt ) {
 					" ="
 				)
 				.replace( rdefineEnd, "" );
-
-		// Sizzle treatment
-		} else if ( /\/sizzle$/.test( name ) ) {
-			contents = "var Sizzle =\n" + contents
-
-				// Remove EXPOSE lines from Sizzle
-				.replace( /\/\/\s*EXPOSE[\w\W]*\/\/\s*EXPOSE/, "return Sizzle;" );
-
 		} else {
 
 			contents = contents
