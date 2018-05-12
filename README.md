@@ -29,7 +29,7 @@ cd "DeveloperStudio" && npm run build
 ```
 The built version of jQuery will be put in the `dist/` subdirectory, along with the minified copy and associated map file.
 
-If you want to create custom build or help with Developer Studio, it would be better to install [grunt command line interface](www.gruntjs.com) as a global package:
+If you want to create custom build or help with Developer Studio, it would be better to install [grunt command line interface](https://www.gruntjs.com) as a global package:
 
 ```
 npm install -g grunt-cli
